@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+    padding-top: 120px; /* Adjust for fixed header */
+}
+
+a {
+    color: #e49e06;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color:#e49e06;
+	font-family:anticregular;
+	font-weight:400;
+	letter-spacing:.1em;
+	text-align:left;
+}
+
+h1 {
+    
+   
+    color: rgba(4, 82, 82, 0.74);;
+	
+	
+	letter-spacing:.2em;
+	
+}
+
+p {	
+	font-size:15px;
+	line-height:24px;
+	letter-spacing:0.05em;
+	color:rgb(100, 96, 96);
+	text-align: justify;
+}
+
+
+/* Header Styles */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    text-align: right;
+}
+
+/* Main Content */
+#body {
+    padding: 50px;
+}
+
+/* Updated Courses Section */
+.courses-section .course-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start; /* Prevents tiles from aligning vertically */
+}
+
+.course-tile {
+    display: flex;
+    flex-direction: column; /* Ensures proper stacking of content */
+    width: 300px;
+	
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.course-tile:hover {
+    transform: scale(1.05);
+}
+
+.course-header {
+    padding: 20px;
+	text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.course-header h3 {
+    margin: 0 0 10px; /* Add spacing below the heading */
+    font-size: 18px;
+    color: #333;
+}
+
+.course-info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add space between the icon and the text */
+}
+
+
+.course-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    object-fit: scale-down;
+    background-color: #eee;
+}
+.course-details {
+    display: none;
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+}
+
+.course-tile.expanded .course-details {
+    display: block; /* Display the expanded details */
+}
+
+.course-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.course-highlights p {
+    margin: 5px 0;
+    font-size: 12px;
+    color:#555;
+	font-style: italic;
+}
+
+/* Footer */
+#footer {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer .connect a {
+    margin: 0 10px;
+    color: #e49e06;
+}
+
+
