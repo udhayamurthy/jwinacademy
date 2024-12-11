@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   	<meta charset="UTF-8">
-  	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	  <title>JWin Academy</title>
-   	 <link rel="stylesheet" href="style.css" type="text/css">
-  	  <base href="/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWin Academy - Software Training Instiutue - Upskill Today, Lead Tomorrow</title>
+    <meta name="description" content="JWin Academy offers IT training courses to upskill engineers and students for successful careers. Join us to lead tomorrow.">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="canonical" href="https://www.jwinacademy.com">
+    <base href="/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "JWin Academy",
+      "url": "https://www.jwinacademy.com",
+      "logo": "https://www.jwinacademy.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 860890606",
+        "contactType": "customer service"
+      }
+    }
+    </script>
 </head>
 <body>
-	
-
     <!-- Header Section -->
     <header id="header">
         <div class="container">
             <a href="index.html" id="logo">
                 <img src="logo.png" alt="JWin Academy Logo" height="120">
             </a>
-		 <!-- 	<h3>
-				Upskill Today, Lead Tomorrow 
-            </h3> -->
-			
-              
             <div class="contact-info">
                 <p>📞 <strong>Phone:</strong> (+91) 860 890 60 60</p>
                 <p>✉️ <strong>Email:</strong> <a href="mailto:academy.jwin@gmail.com">academy.jwin@gmail.com</a></p>
@@ -30,24 +39,17 @@
 
     <!-- Main Content -->
     <main id="body">
-        <section>
+        <section>	  
+ <h1>JWin Academy - Upskill Today, Lead Tomorrow</h1>
             <h2>About Us</h2>
-            <p>
-                Welcome to <b>JWin Academy</b>, your gateway to a future-proof career! 
-            </p>
-			<p>	
-				Founded by IT experts with decades of industry experience, <b>JWin Academy</b> was established with a service-oriented mindset to make quality education and training accessible to all. Our goal is to upskill young engineers and graduating students, equipping them with practical, hands-on knowledge to thrive in today’s competitive tech industry.
-			</p>
-			<p>
-				We are dedicated to fostering talent and empowering the next generation of tech professionals. At <b>JWin Academy</b>, we strive tirelessly to extend our services to all budding students and engineers, helping them achieve their career aspirations. Join us to unlock your potential and lead the way in the ever-evolving world of technology!
-			</p>
+            <p>Welcome to <b>JWin Academy</b>, your gateway to a future-proof career!</p>
+            <p>Founded by IT experts with decades of industry experience, <b>JWin Academy</b> was established with a service-oriented mindset to make quality education and training accessible to all. Our goal is to upskill young engineers and graduating students, equipping them with practical, hands-on knowledge to thrive in today’s competitive tech industry.</p>
+            <p>We are dedicated to fostering talent and empowering the next generation of tech professionals. At <b>JWin Academy</b>, we strive tirelessly to extend our services to all budding students and engineers, helping them achieve their career aspirations. Join us to unlock your potential and lead the way in the ever-evolving world of technology!</p>
         </section>
 
         <section>
             <h2>Our Mission</h2>
-            <p>
-               To EMPOWER every student to unlock their true potential by equipping them with in-demand skills, driving success in their careers and beyond.
-            </p>
+            <p>To EMPOWER every student to unlock their true potential by equipping them with in-demand skills, driving success in their careers and beyond.</p>
         </section>
 
         <!-- Courses Section -->
@@ -55,29 +57,27 @@
             <h2>Our Courses</h2>
             <div class="course-tiles">
                 <!-- Course Tile -->
-               
-				<div class="course-tile" onclick="toggleDetails(this)">
-					<div class="course-header">
-						<h3>Manual Software Testing</h3>
-						<div class="course-info-row">
-							<img src="testing.png" alt="Testing" class="course-icon">
-							<div class="course-info">
-								<p>Start Date: Jan 19, 2025</p>
-								<p>Instructor: </p>
-							</div>
-						</div>
-					</div>
-					<div class="course-details">
-						<p>Master the fundamentals of software quality assurance with our Manual Software Testing course. Learn test case design, bug reporting, and QA processes to ensure flawless applications.</p>
-						
-								<p><strong>Highlights:</strong></p>
-								<div class="course-highlights">
-										<p>Comprehensive coverage of SDLC & STLC</p>
-										<p>Real-time project-based learning</p>
-									<p>Focus on defect tracking and reporting</p>
-						</div>	
-					</div>
-				</div>
+                <div class="course-tile" onclick="toggleDetails(this)">
+                    <div class="course-header">
+                        <h3>Manual Software Testing</h3>
+                        <div class="course-info-row">
+                            <img src="testing.png" alt="Testing" class="course-icon">
+                            <div class="course-info">
+                                <p>Start Date: Jan 19, 2025</p>
+                                <p>Instructor:</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <p>Master the fundamentals of software quality assurance with our Manual Software Testing course. Learn test case design, bug reporting, and QA processes to ensure flawless applications.</p>
+                        <p><strong>Highlights:</strong></p>
+                        <div class="course-highlights">
+                            <p>Comprehensive coverage of SDLC & STLC</p>
+                            <p>Real-time project-based learning</p>
+                            <p>Focus on defect tracking and reporting</p>
+                        </div>
+                    </div>
+                </div>
 				
 
 				<div class="course-tile" onclick="toggleDetails(this)">
@@ -192,16 +192,13 @@
 <script>
     function toggleDetails(tile) {
         // Close all other expanded tiles
-        document.querySelectorAll('.course-tile.expanded').forEach(openTile => {
-            openTile.classList.remove('expanded');
-        });
+            document.querySelectorAll('.course-tile.expanded').forEach(openTile => {
+                openTile.classList.remove('expanded');
+            });
 
         // Toggle the clicked tile
-        tile.classList.toggle('expanded');
-    }
-</script>
-
-
-
+            tile.classList.toggle('expanded');
+        }
+    </script>
 </body>
 </html>
