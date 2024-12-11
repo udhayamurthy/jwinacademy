@@ -13,34 +13,37 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+    color: #e49e06;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
 h2 {
     font-size: 24px;
-    margin-bottom: 5px;
-    color:#e49e06;
-	font-family:anticregular;
-	font-weight:400;
-	letter-spacing:.1em;
-	text-align:left;
+    font-weight: 400;
 }
 
 h3 {
-    
-   
+    font-size: 18px;
+    font-weight: 400;
     color: rgba(4, 82, 82, 0.74);
-	
-	
-	letter-spacing:.2em;
-	
 }
 
-p {	
-	font-size:15px;
-	line-height:24px;
-	letter-spacing:0.05em;
-	color:rgb(100, 96, 96);
-	text-align: justify;
+p {
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(100, 96, 96);
+    text-align: justify;
+    margin: 10px 0;
 }
-
 
 /* Header Styles */
 #header {
@@ -55,23 +58,16 @@ p {
 
 #header .container {
     display: flex;
-	justify-content:  space-around;
-  
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-	
 }
 
-#header .contact-info {
-	padding-right: 30px;
-	
-}
 .contact-info p {
     margin: 0;
     font-size: 14px;
     text-align: right;
-	
 }
 
 /* Main Content */
@@ -85,14 +81,13 @@ p {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    align-items: flex-start; /* Prevents tiles from aligning vertically */
+    align-items: flex-start;
 }
 
 .course-tile {
     display: flex;
-    flex-direction: column; /* Ensures proper stacking of content */
+    flex-direction: column;
     width: 300px;
-	
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -108,23 +103,19 @@ p {
 
 .course-header {
     padding: 20px;
-	text-align: center;
+    text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
 .course-header h3 {
-    margin: 0 0 10px; /* Add spacing below the heading */
-    font-size: 18px;
-    color: #333;
-   font-family: Arial, sans-serif;
+    margin: 0 0 10px;
 }
 
 .course-info-row {
     display: flex;
     align-items: center;
-    gap: 10px; /* Add space between the icon and the text */
+    gap: 10px;
 }
-
 
 .course-icon {
     width: 50px;
@@ -133,6 +124,7 @@ p {
     object-fit: scale-down;
     background-color: #eee;
 }
+
 .course-details {
     display: none;
     padding: 15px;
@@ -143,7 +135,7 @@ p {
 }
 
 .course-tile.expanded .course-details {
-    display: block; /* Display the expanded details */
+    display: block;
 }
 
 .course-info p {
@@ -155,8 +147,8 @@ p {
 .course-highlights p {
     margin: 5px 0;
     font-size: 12px;
-    color:#555;
-  font-style: italic;
+    color: #555;
+    font-style: italic;
 }
 
 /* Footer */
@@ -171,5 +163,3 @@ p {
     margin: 0 10px;
     color: #e49e06;
 }
-
-
